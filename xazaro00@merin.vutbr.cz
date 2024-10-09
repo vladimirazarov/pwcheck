@@ -3,11 +3,11 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-/* Macros */
+/* Global variables declaration */
 #define STATS_STRING "--stats" // string for --stats parameter
 #define PASS_LENGTH 100        // maximum length of the one password
 
-/* Get length of an array of characters not including new line character */
+/* Get length of an array of characters not incuding new line character */
 int getStrLen(char string[]) {
   int i;
   for (i = 0; string[i] != '\0' && string[i] != '\n'; i++) {
@@ -293,6 +293,7 @@ int main(int argc, char *argv[]) {
   }
 
   if (opt != NULL) {
+
     printf("Statistika:\n");
     printf("Ruznych znaku: %d\n", getStrLen(diffChar));
     printf("Minimalni delka: %d\n", min);

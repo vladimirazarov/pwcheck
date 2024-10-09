@@ -22,7 +22,7 @@ Program je spouštěn se dvěma pevně zadanými argumenty LEVEL a PARAM a s jed
 
 LEVEL
 celé číslo v intervalu [1, 4], které určuje požadovanou úroveň bezpečnosti (viz níže)
-PARAM
+[PARAM](PARAM.md)
 kladné celé číslo, které určuje dodatečný parametr pravidel (viz níže)
 --stats
 pokud je zadané, určuje, zda se na konci programu mají vypsat souhrnné statistiky analyzovaných hesel
