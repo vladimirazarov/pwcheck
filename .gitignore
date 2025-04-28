@@ -1,0 +1,11 @@
+# Compiled executable
+/pwcheck
+
+# Object files
+*.o
+
+# Python test files (temporary)
+*.py
+
+# Other
+helpFile.txt 

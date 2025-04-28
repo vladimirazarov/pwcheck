@@ -1,6 +1,17 @@
-pwcheck:
-	gcc -g -std=c99 -Wall -Wextra -Werror pwcheck.c -o pwcheck
+CC = gcc
+CFLAGS = -g -Wall -Wextra -std=c11
+LDFLAGS = -lrt -lpthread
+EXEC = pwcheck
+
+all: $(EXEC)
+
+$(EXEC): pwcheck.c
+	$(CC) $(CFLAGS) pwcheck.c -o $(EXEC) $(LDFLAGS)
+
 clean:
-	rm pwcheck
+	rm -f $(EXEC) *.o
+
 install:
-	gcc -g -std=c99 -Wall -Wextra -Werror pwcheck.c -o pwcheck
+	$(CC) $(CFLAGS) pwcheck.c -o $(EXEC) $(LDFLAGS)
+
+.PHONY: all clean install
