@@ -1,4 +1,4 @@
-// Author: Vova Azarko
+// Author: Vladimir Azarov
 
 #include <limits.h>
 #include <stdio.h>
